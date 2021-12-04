@@ -42,7 +42,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:padding="4dp"
-                android:src="@drawable/cat"
+                android:src="@drawable/profileimg"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -95,7 +95,7 @@
                             android:layout_marginStart="16dp"
 
                             android:scaleType="centerCrop"
-                            android:src="@drawable/dog"
+                            android:src="@drawable/basic_algebra2"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
 
@@ -130,7 +130,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/baloo"
-                            android:text="Create a story"
+                            android:text=" New Equation "
                             android:textColor="#FFFFFF"
                             android:textSize="18sp"
                             app:layout_constraintEnd_toEndOf="@+id/imageView2"
@@ -138,15 +138,42 @@
                             app:layout_constraintStart_toStartOf="@+id/imageView2"
                             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/subtopics"
+                            android:layout_width="@dimen/_130mdp"
+                            android:layout_height="@dimen/_85mdp"
+                            android:layout_marginStart="16dp"
+
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/download"
+                            app:layout_constraintStart_toEndOf="@id/Story"
+                            app:layout_constraintTop_toTopOf="parent"
+
+                            app:riv_border_color="#333333"
+                            app:riv_border_width="2dip"
+                            app:riv_corner_radius="10dip"
+                            app:riv_mutate_background="true" />
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/cameraocr"
+                            android:layout_width="@dimen/_130mdp"
+                            android:layout_height="@dimen/_85mdp"
+                            android:layout_marginStart="16dp"
+
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ocrimage"
+                            app:layout_constraintStart_toEndOf="@id/subtopics"
+                            app:layout_constraintTop_toTopOf="parent"
+
+                            app:riv_border_color="#333333"
+                            app:riv_border_width="2dip"
+                            app:riv_corner_radius="10dip"
+                            app:riv_mutate_background="true" />
+
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/story_recycler_view"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="16dp"
-                        android:nestedScrollingEnabled="false" />
+
 
 
                 </LinearLayout>

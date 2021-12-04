@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">petfinderapp</string>
+    <string name="app_name">prosolver</string>
     <!--    custom strings -->
     <string name="home">Home</string>
     <string name="add">Add post</string>
@@ -8,5 +8,6 @@
     <string name="profile">Profile</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description"> I like to make new formulas and publish it and make it use by everyone for help Making formulas to make problems easy is my passion</string>
 
 </resources>

@@ -17,18 +17,33 @@
 
     </FrameLayout>
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_bg"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/Theme.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <com.iammert.library.readablebottombar.ReadableBottomBar
         android:id="@+id/readablebottombar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        app:rbb_tabs="@xml/tabs"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:rbb_activeItemType="text"
-        app:rbb_textColor="@color/orange"
         app:rbb_backgroundColor="@color/green"
-        app:rbb_indicatorColor="@color/orange"/>
+        app:rbb_indicatorColor="@color/orange"
+        app:rbb_tabs="@xml/tabs"
+        app:rbb_textColor="@color/orange">
+
+    </com.iammert.library.readablebottombar.ReadableBottomBar>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

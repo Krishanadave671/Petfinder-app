@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "619951318317",
+    "project_id": "petfinderapp-bdaf1",
+    "storage_bucket": "petfinderapp-bdaf1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619951318317:android:f1cfdf7212772026b85fa4",
+        "android_client_info": {
+          "package_name": "com.krishana.petfinderapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619951318317-586kiatmod2kbk1lfohgddsu4dt3f3k5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-9QBLi8IuPqvbi2nivlVxPyEe0GLsLzk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619951318317-586kiatmod2kbk1lfohgddsu4dt3f3k5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
