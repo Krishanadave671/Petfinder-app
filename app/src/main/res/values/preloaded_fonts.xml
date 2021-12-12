@@ -3,6 +3,7 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/acme</item>
         <item>@font/baloo</item>
+        <item>@font/muli_extrabold</item>
         <item>@font/roboto_slab_bold</item>
         <item>@font/secular_one</item>
     </array>

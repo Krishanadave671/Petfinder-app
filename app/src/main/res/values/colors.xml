@@ -17,5 +17,9 @@
     <color name="Blur">#0E86E5</color>
     <color name="Green">#0EE53D</color>
     <color name="Red">#E8092F</color>
+    <color name="subtopicgreen">#FF6200EE</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="secondcolor">#00C6E2</color>
+    <color name="ocrcustominput">#D0E8FF</color>
 
 </resources>

@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".customlayout">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--    //customresult-->
+<!--    #6554D2-->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -88,43 +93,83 @@
         android:id="@+id/custominputrv"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
     <Button
-        android:id="@+id/btn_calculatecustom"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/_40font_mdp"
-        android:layout_marginTop="30dp"
+        android:id="@+id/customcalculate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
         android:backgroundTint="#6554D2"
-        android:fontFamily="@font/secular_one"
-        android:gravity="center"
         android:text="Calculate"
         android:textColor="@color/white"
-        android:textSize="@dimen/_18font_mdp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/custominputrv" />
+        app:layout_constraintTop_toBottomOf="@+id/custominputrv"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/customresult"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_200mdp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
-
-        android:layout_marginEnd="20dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10font_mdp"
+        android:layout_marginTop="58dp"
         android:background="#0E346E"
-        android:fontFamily="@font/secular_one"
-        android:gravity="center"
-        android:text="Title of formula"
+        android:padding="20dp"
+        android:text="TextView"
         android:textColor="@color/white"
-        android:textSize="@dimen/_14font_mdp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_calculatecustom" />
+        app:layout_constraintTop_toBottomOf="@+id/customcalculate" />
+
+
+    <ImageView
+        android:id="@+id/Rukozara"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customcalculate"
+        app:srcCompat="@drawable/rukojara" />
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/customresult"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="@+id/customresult"
+        app:layout_constraintTop_toTopOf="@+id/customresult"
+        app:srcCompat="@drawable/ic_baseline_close_24" />
+
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/close"
+        app:layout_constraintEnd_toStartOf="@+id/close"
+        app:layout_constraintTop_toTopOf="@+id/close"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_share" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

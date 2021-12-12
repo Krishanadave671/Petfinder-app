@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.krishana.petfinderapp">
+    package="com.krishana.prosolverMpr">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -16,27 +16,40 @@
         android:theme="@style/Theme.Petfinderapp">
 
         <activity
-            android:name=".Inbuilt_formulas"
+            android:name="com.krishana.prosolverMpr.Activity_Thankyou"
             android:exported="true" />
         <activity
-            android:name=".SignUpActivity"
+            android:name="com.krishana.prosolverMpr.standardDeviation"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.krishana.prosolverMpr.Mean_median_mode"
             android:exported="true" />
         <activity
-            android:name=".OCRsection"
+            android:name="com.krishana.prosolverMpr.customlayout"
             android:exported="true" />
-
+        <activity
+            android:name="com.krishana.prosolverMpr.Inbuilt_formulas"
+            android:exported="true" />
+        <activity
+            android:name="com.krishana.prosolverMpr.SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.krishana.prosolverMpr.OCRsection"
+            android:exported="true" />
+        <activity
+            android:name="com.krishana.prosolverMpr.subtopiclist"
+            android:exported="true" />
+        <activity
+            android:name="com.krishana.prosolverMpr.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.krishana.prosolverMpr.Login_Activity"
+            android:exported="true"/>
             <activity
-                android:name=".customlayout"
-                android:exported="true" />
-                <activity
-                    android:name=".Login_Activity"
-                    android:exported="true">
+                android:name="com.krishana.prosolverMpr.splashscreen"
+                android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

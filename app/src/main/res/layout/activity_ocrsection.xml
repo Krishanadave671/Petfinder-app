@@ -23,20 +23,24 @@
             app:layout_constraintTop_toBottomOf="@+id/textView3"
             app:srcCompat="@drawable/scanner" />
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
+            android:backgroundTint="@color/ocrcustominput"
             android:id="@+id/textView"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_30font_mdp"
+
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:background="@color/white"
+            android:background="#682D2D"
             android:gravity="center"
+            android:minHeight="48dp"
             android:textColor="@color/black"
             android:textSize="20sp"
-            android:textStyle="bold"
 
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/imageView"
             app:layout_constraintStart_toStartOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"/>
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 
 
@@ -48,12 +52,12 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_margin="10dp"
-            android:background="@color/Yellow"
+            android:background="@color/secondcolor"
 
             android:fontFamily="@font/galindo"
             android:gravity="center"
             android:text="AsK me Anything !!"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="34sp"
             android:textStyle="bold"
             android:visibility="visible"
@@ -63,19 +67,20 @@
 
         <Button
             android:id="@+id/button"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/_200mdp"
             android:layout_height="wrap_content"
             android:layout_margin="40dp"
-            android:backgroundTint="@color/green"
-            android:text="Answer"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:text="Calculate"
+            android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <TextView
-            android:id="@+id/tv_Result"
+            android:id="@+id/customresult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="40dp"
@@ -122,10 +127,10 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:visibility="invisible"
-            app:layout_constraintEnd_toEndOf="@+id/tv_Result"
+            app:layout_constraintEnd_toEndOf="@+id/customresult"
             app:layout_constraintHorizontal_bias="0.97"
-            app:layout_constraintStart_toStartOf="@+id/tv_Result"
-            app:layout_constraintTop_toTopOf="@+id/tv_Result"
+            app:layout_constraintStart_toStartOf="@+id/customresult"
+            app:layout_constraintTop_toTopOf="@+id/customresult"
             app:srcCompat="@drawable/ic_baseline_close_24" />
 
         <ImageView
